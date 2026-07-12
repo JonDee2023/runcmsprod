@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        Officer Dashboard
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="runcms-officer.css"
+    >
+
+</head>
+
+<body>
+
+<h1>
+    Assigned Complaints
+</h1>
+
+<table id="complaints-table">
+
+    <thead>
+
+        <tr>
+
+            <th>ID</th>
+
+            <th>Subject</th>
+
+            <th>Category</th>
+
+            <th>Description</th>
+
+            <th>Priority</th>
+
+            <th>Status</th>
+
+            <th>Action</th>
+
+            <th>Comments</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="complaints-body">
+
+    </tbody>
+
+</table>
+
+<div
+    id="update-box"
+    class="modal"
+>
+
+    <h3>
+        Update Complaint
+    </h3>
+
+    <select id="status">
+
+        <option value="In Progress">
+            In Progress
+        </option>
+
+        <option value="Resolved">
+            Resolved
+        </option>
+
+        <!--option value="Closed">
+            Closed
+        </option-->
+
+    </select>
+
+    <textarea
+        id="comment"
+        placeholder="Enter action taken..."
+    ></textarea>
+
+    <button
+        id="save-btn"
+    >
+        Save Update
+    </button>
+
+</div>
+
+<!-- Add Comment-->
+<div id="comment-box" class="modal">
+
+    <h3>Add Comment</h3>
+
+    <textarea
+        id="comment-text"
+        placeholder="Enter comment..."
+    ></textarea>
+
+    <button onclick="saveComment()">
+        Save Comment
+    </button>
+
+</div>
+
+
+<script src="runcms-officer.js"></script>
+
+</body>
+</html>

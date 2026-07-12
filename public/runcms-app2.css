@@ -1,0 +1,287 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #134e4a);
+    color:white;
+    min-height:100vh;
+}
+
+/* ================= TOP NAV ================= */
+
+.heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+#user-h1{
+    font-size:28px;
+    font-weight:700;
+    color:white;
+}
+
+.menu-bar{
+    font-size:32px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu-bar:hover{
+    transform:scale(1.1);
+}
+
+/* ================= SIDEBAR ================= */
+
+.nav-bar{
+    position:fixed;
+    top:0;
+    left:-260px;
+    width:250px;
+    height:100vh;
+    background:#111827;
+    transition:0.4s ease;
+    padding-top:80px;
+    z-index:2000;
+    box-shadow:4px 0 20px rgba(0,0,0,0.4);
+}
+
+.nav-bar.show{
+    left:0;
+}
+
+.nav-bar ul{
+    list-style:none;
+}
+
+.list{
+    margin:10px 0;
+}
+
+.list-itm{
+    display:block;
+    padding:15px 25px;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+    border-left:4px solid transparent;
+}
+
+.list-itm:hover{
+    background:#1f2937;
+    border-left:4px solid #38bdf8;
+    padding-left:30px;
+}
+
+/* ================= LOGO + USER IMAGE ================= */
+
+.topimgs{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:20px;
+}
+
+#userdp{
+    border:3px solid white;
+}
+
+/* ================= TIMERS ================= */
+
+.timers{
+    background: rgba(255,255,255,0.12);
+    padding:14px 20px;
+    border-radius:16px;
+    margin:15px auto;
+    width:320px;
+    backdrop-filter:blur(8px);
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ================= BUTTONS ================= */
+
+.start-stop-btn{
+    border:none;
+    padding:16px 28px;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    margin:40px 15px;
+    transition:0.3s ease;
+    color:white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+#lesson-start-btn{
+    background:linear-gradient(to right, #22c55e, #16a34a);
+}
+
+#lesson-end-btn{
+    background:linear-gradient(to right, #ef4444, #dc2626);
+}
+
+.start-stop-btn:hover{
+    transform:translateY(-4px);
+    opacity:0.95;
+}
+
+/* ================= FORMS ================= */
+
+.header-div,
+.header-div2,
+.header-div3{
+    width:90%;
+    max-width:550px;
+    margin:50px auto;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:24px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.inputs,
+.fields,
+.extr-inputs1,
+.extr-inputs2,
+#uemail,
+#upassword{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:12px;
+    padding:0 15px;
+    margin:12px 0;
+    font-size:16px;
+    outline:none;
+    background:rgba(255,255,255,0.9);
+}
+
+.password-container{
+    position: relative;
+    width: 100%;
+    /*margin-left: 120px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.password-container input{
+    width:100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+}
+
+.password-container .eye{
+    position:absolute;
+    right:20px;
+    top:35%;
+    transform: translate(-5%);
+    cursor:pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.msg,
+#login-msg,
+#forgot-password{
+    margin-top: 10px;
+    text-align: center;
+    color:rgb(222, 231, 231);
+}
+
+#signup-link{
+    font-size: large;
+    color:grey;
+    font-weight: bold;
+}
+
+#email-error {
+    color: red;
+}
+
+/* ================= SUBMIT BUTTONS ================= */
+
+.submit-btn,
+#fpwrd-btn,
+#spwrd-btn{
+    width:100%;
+    height:52px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(to right, #06b6d4, #2563eb);
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:20px;
+}
+
+.submit-btn:hover,
+#fpwrd-btn:hover,
+#spwrd-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(37,99,235,0.4);
+}
+
+/* ================= HISTORY SECTION ================= */
+
+#history-container{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    background: rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:24px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .heading{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .timers{
+        width:90%;
+    }
+
+    .start-stop-btn{
+        width:90%;
+        margin:15px auto;
+        display:block;
+    }
+
+    #user-h1{
+        font-size:22px;
+    }
+}
+
+#chat-btn{
+    margin-left: 800;
+    min-height: 50px;
+    min-width: 30px;
+}

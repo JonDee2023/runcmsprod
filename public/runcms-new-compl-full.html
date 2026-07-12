@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Complaint | RUN CMS</title>
+
+    <link rel="stylesheet" href="runcms-app2.css">
+</head>
+
+<body>
+
+<div class="header-div2">
+
+    <img id="logo" src="run.jpg" width="30%">
+
+    <h1 id="user-h1">Submit New Complaint</h1>
+
+    <form id="new-complaint-form">
+
+        <!-- Complaint Category -->
+        <select
+            id="category"
+            class="inputs"
+            required
+        >
+            <option value="">
+                Select Complaint Category
+            </option>
+        </select>
+
+        <!-- Complaint Subject -->
+
+        <input
+            type="text"
+            id="complaint-subject"
+            class="inputs"
+            placeholder="Complaint Subject"
+            maxlength="150"
+            required
+        >
+
+        <!-- Complaint Description -->
+
+        <textarea
+            id="complaint-description"
+            class="inputs"
+            rows="8"
+            placeholder="Provide full details of your complaint..."
+            required
+        ></textarea>
+
+        <!-- Priority -->
+
+        <select
+            id="priority"
+            class="inputs"
+            required
+        >
+            <option value="">
+                Select Priority
+            </option>
+
+            <option value="low">
+                Low
+            </option>
+
+            <option value="medium">
+                Medium
+            </option>
+
+            <option value="high">
+                High
+            </option>
+
+            <option value="critical">
+                Critical
+            </option>
+
+        </select>
+
+        <button
+            class="submit-btn"
+            type="submit"
+        >
+            Submit Complaint
+        </button>
+
+    </form>
+
+    <p id="submission-message"></p>
+
+</div>
+
+<script src="runcms-new-compl-full.js"></script>
+
+</body>
+</html>

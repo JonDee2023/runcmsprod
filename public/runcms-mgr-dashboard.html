@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manager Dashboard | RUN CMS</title>
+    <link rel="stylesheet" href="runcms-mgr.css">
+</head>
+
+<body>
+
+<h1>Complaint Management - Manager Panel</h1>
+
+<table id="complaintsTable">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Complainant</th>
+            <th>Subject</th>
+            <th>Category</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+            <th>Comments</th>
+        </tr>
+    </thead>
+
+    <tbody></tbody>
+
+</table>
+
+<!-- Assign Modal -->
+<div id="assignBox" class="modal">
+
+    <h3>Assign Complaint</h3>
+
+    <select id="officerSelect"></select>
+
+    <button onclick="assignComplaint()">Assign</button>
+
+</div>
+
+<!-- Status Update -->
+<div id="statusBox" class="modal">
+
+    <h3>Update Status</h3>
+
+    <select id="statusSelect">
+        <option>Assigned</option>
+        <option>Not Assigned</option>
+        <option>Transferred</option>
+        <option>Completed</option>
+        <option>Closed</option>
+    </select>
+
+    <button onclick="updateStatus()">Update</button>
+
+</div>
+
+<!-- Add Comment-->
+<div id="comment-box" class="modal">
+
+    <h3>Add Comment</h3>
+
+    <textarea
+        id="comment-text"
+        placeholder="Enter comment..."
+    ></textarea>
+
+    <button onclick="saveComment()">
+        Save Comment
+    </button>
+
+</div>
+
+<script src="runcms-mgr.js"></script>
+
+</body>
+</html>
