@@ -22,7 +22,7 @@ async function addComment(e){
 
     const response =
         await fetch(
-            "http://localhost:3000/api/add-comment",
+            "https://runcmsprod.onrender.com/api/add-comment",
             {
                 method:"POST",
                 headers:{
