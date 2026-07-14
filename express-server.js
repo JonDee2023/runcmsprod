@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 app.use(cors({
-  origin: "https:site.netlify.app",
+  origin: "https: runcmsprod.netlify.app",
   credentials: true
 }));
 app.use(express.json());
