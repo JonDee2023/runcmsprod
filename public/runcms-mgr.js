@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", loadComplaints);
 
 async function loadComplaints() {
 
-    const res = await fetch("http://localhost:3000/api/manager/complaints");
+    const res = await fetch("https://runcmsprod.onrender.com/api/manager/complaints");
     const data = await res.json();
 
     const tbody = document.querySelector("#complaintsTable tbody");
@@ -43,7 +43,7 @@ async function loadComplaints() {
 // LOAD OFFICERS
 async function loadOfficers() {
 
-    const res = await fetch("http://localhost:3000/api/manager/officers");
+    const res = await fetch("https://runcmsprod.onrender.com/api/manager/officers");
     const officers = await res.json();
 
     const select = document.getElementById("officerSelect");
@@ -72,7 +72,7 @@ async function assignComplaint() {
 
     const user_id = localStorage.getItem("user_id");
 
-    await fetch("http://localhost:3000/api/manager/assign", {
+    await fetch("https://runcmsprod.onrender.com/apiocalhostocalhostttpOSTetchpi/manager/assign", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -98,7 +98,7 @@ async function updateStatus() {
     const status = document.getElementById("statusSelect").value;
     const user_id = localStorage.getItem("user_id");
 
-    await fetch("http://localhost:3000/api/manager/update-status", {
+    await fetch("https://runcmsprod.onrender.com/api/manager/update-status", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -139,7 +139,7 @@ async function saveComment(){
 
     const response =
         await fetch(
-            "http://localhost:3000/api/add-comment",
+            "https://runcmsprod.onrender.com/api/add-comment",
             {
                 method:"POST",
 
