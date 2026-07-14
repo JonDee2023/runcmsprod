@@ -31,7 +31,7 @@ async function saveNewPassword(e) {
     const hashedPassword = simpleHash(newPassword);
 
     try {
-        const response = await fetch("http://localhost:3000/api/savenewpassword", {
+        const response = await fetch("https://runcmsprod.onrender.com/api/savenewpassword", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
