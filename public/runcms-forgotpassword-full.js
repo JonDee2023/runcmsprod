@@ -14,7 +14,7 @@ async function forgotPassword (e) {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/forgotpassword", {
+        const response = await fetch("https://runcmsprod.onrender.com/api/forgotpassword", {
 
     method: "POST",
     headers: {
