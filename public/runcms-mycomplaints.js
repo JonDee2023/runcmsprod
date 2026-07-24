@@ -21,7 +21,7 @@ async function loadComplaintHistory() {
 
         const response =
             await fetch(
-                `https://runcmsprod.onrender.com/api/my-complaints/${userId}`
+                `https://runcmsprods.onrender.com/api/my-complaints/${userId}`
             );
 
         const data =
