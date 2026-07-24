@@ -16,7 +16,7 @@ async function loadComplaints(){
 
         const response =
             await fetch(
-                `https://runcmsprod.onrender.com/api/officer/complaints/${officerId}`
+                `https://runcmsprods.onrender.com/api/officer/complaints/${officerId}`
             );
 
         const data =
@@ -125,7 +125,7 @@ async function saveUpdate(){
 
         const response =
             await fetch(
-                "https://runcmsprod.onrender.com/api/officer/update-status",
+                "https://runcmsprods.onrender.com/api/officer/update-status",
                 {
                     method:"POST",
 
