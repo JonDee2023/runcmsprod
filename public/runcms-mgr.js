@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", loadComplaints);
 
 async function loadComplaints() {
 
-    const res = await fetch("https://runcmsprod.onrender.com/api/manager/complaints");
+    const res = await fetch("https://runcmsprods.onrender.com/api/manager/complaints");
     const data = await res.json();
 
     const tbody = document.querySelector("#complaintsTable tbody");
@@ -72,7 +72,7 @@ async function assignComplaint() {
 
     const user_id = localStorage.getItem("user_id");
 
-    await fetch("https://runcmsprod.onrender.com/apiocalhostocalhostttpOSTetchpi/manager/assign", {
+    await fetch("https://runcmsprods.onrender.com/apiocalhostocalhostttpOSTetchpi/manager/assign", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -98,7 +98,7 @@ async function updateStatus() {
     const status = document.getElementById("statusSelect").value;
     const user_id = localStorage.getItem("user_id");
 
-    await fetch("https://runcmsprod.onrender.com/api/manager/update-status", {
+    await fetch("https://runcmsprods.onrender.com/api/manager/update-status", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
