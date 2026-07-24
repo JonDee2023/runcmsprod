@@ -9,7 +9,7 @@ async function loadOfficers() {
 
         const response =
             await fetch(
-                "https://runcmsprod.onrender.com/api/officers"
+                "https://runcmsprods.onrender.com/api/officers"
             );
 
         const officers =
