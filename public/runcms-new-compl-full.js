@@ -19,7 +19,7 @@ async function loadCategories(){
 
         const response =
             await fetch(
-                "https://runcmsprod.onrender.com/api/complaint-categories"
+                "https://runcmsprods.onrender.com/api/complaint-categories"
             );
 
         const categories =
@@ -62,7 +62,7 @@ async function loadUser() {
 
     try {
 
-        const response = await fetch("https://runcmsprod.onrender.com/api/get-user", {
+        const response = await fetch("https://runcmsprods.onrender.com/api/get-user", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -106,7 +106,7 @@ async function submitComplaint(e){
 
     const response =
         await fetch(
-            "https://runcmsprod.onrender.com/api/submit-complaint",
+            "https://runcmsprods.onrender.com/api/submit-complaint",
             {
                 method:"POST",
 
