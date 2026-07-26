@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", loadComplaints);
 
 async function loadComplaints() {
 
-    const res = await fetch("https://runcmsprods.onrender.com/api/manager/complaints");
+    const res = await fetch("https://runcmsprods.onrender.com/manager/complaints");
     const data = await res.json();
 
     const tbody = document.querySelector("#complaintsTable tbody");
@@ -43,7 +43,7 @@ async function loadComplaints() {
 // LOAD OFFICERS
 async function loadOfficers() {
 
-    const res = await fetch("https://runcmsprods.onrender.com/api/manager/officers");
+    const res = await fetch("https://runcmsprods.onrender.com/manager/officers");
     const officers = await res.json();
 
     const select = document.getElementById("officerSelect");
@@ -72,7 +72,7 @@ async function assignComplaint() {
 
     const user_id = localStorage.getItem("user_id");
 
-    await fetch("https://runcmsprods.onrender.com/apiocalhostocalhostttpOSTetchpi/manager/assign", {
+    await fetch("https://runcmsprods.onrender.com/manager/assign", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -139,7 +139,7 @@ async function saveComment(){
 
     const response =
         await fetch(
-            "https://runcmsprods.onrender.com/api/add-comment",
+            "https://runcmsprods.onrender.com/add-comment",
             {
                 method:"POST",
 
