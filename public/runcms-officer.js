@@ -196,7 +196,7 @@ async function saveComment(){
 
     const response =
         await fetch(
-            "https://runcmsprod.onrender.com/api/add-comment",
+            "https://runcmsprods.onrender.com/api/add-comment",
             {
                 method:"POST",
 
