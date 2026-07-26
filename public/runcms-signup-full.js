@@ -97,15 +97,15 @@ async function userSignup(event) {
 
     console.log("Signup script loaded");
 
-    const emailError = document.getElementById("email-error");
+    //const emailError = document.getElementById("email-error");
 
-    if (!response.ok) {
+    //if (!response.ok) {
 
-        emailError.textContent = data.message;
-        return;
-    }
+        //emailError.textContent = data.message;
+        //return;
+    //}
 
-    emailError.textContent = "";
+    //emailError.textContent = "";
 
     document.getElementById("runcms-signup-form").reset();
 
