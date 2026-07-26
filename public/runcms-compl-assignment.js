@@ -9,7 +9,7 @@ async function loadOfficers() {
 
         const response =
             await fetch(
-                "https://runcmsprods.onrender.com/api/officers"
+                "https://runcmsprods.onrender.com/officers"
             );
 
         const officers =
@@ -63,7 +63,7 @@ async function assignComplaint(e){
         document.getElementById("officer-id").value;
 
     const response = await fetch(
-        "https://runcmsprods.onrender.com/api/assign-complaint",
+        "https://runcmsprods.onrender.com/assign-complaint",
         {
             method: "POST",
             headers: {
