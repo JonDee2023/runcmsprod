@@ -74,7 +74,7 @@ async function userSignup(event) {
 
     
 
-    const response = await fetch("https://runcmsprods.onrender.com/signup", {
+    const response = await fetch("https://runcmsprods.onrender.com/api/signup", {
 
     method: "POST",
 
