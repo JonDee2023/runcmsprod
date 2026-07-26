@@ -63,7 +63,7 @@ async function assignComplaint(e){
         document.getElementById("officer-id").value;
 
     const response = await fetch(
-        "https://runcmsprod.onrender.com/api/assign-complaint",
+        "https://runcmsprods.onrender.com/api/assign-complaint",
         {
             method: "POST",
             headers: {
