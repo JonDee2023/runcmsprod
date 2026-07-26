@@ -16,7 +16,7 @@ async function loadComplaints(){
 
         const response =
             await fetch(
-                `https://runcmsprods.onrender.com/api/officer/complaints/${officerId}`
+                `https://runcmsprods.onrender.com/officer/complaints/${officerId}`
             );
 
         const data =
@@ -125,7 +125,7 @@ async function saveUpdate(){
 
         const response =
             await fetch(
-                "https://runcmsprods.onrender.com/api/officer/update-status",
+                "https://runcmsprods.onrender.com/officer/update-status",
                 {
                     method:"POST",
 
@@ -196,7 +196,7 @@ async function saveComment(){
 
     const response =
         await fetch(
-            "https://runcmsprods.onrender.com/api/add-comment",
+            "https://runcmsprods.onrender.com/add-comment",
             {
                 method:"POST",
 
