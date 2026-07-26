@@ -3,10 +3,19 @@ const cors = require("cors");
 
 const app = express();
 
+//app.use(cors({
+//  origin: "https: runcmsprod.netlify.app",
+//  credentials: true
+//}));
+
 app.use(cors({
-  origin: "https: runcmsprod.netlify.app",
-  credentials: true
+    origin: "https://runcmsprod.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
+
+
 app.use(express.json());
 
 const authRoutes = require("./routes/authentication.js");
