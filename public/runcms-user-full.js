@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
 
             const response = await fetch(
-                "https://runcmsprods.onrender.com/api/get-user",
+                "https://runcmsprods.onrender.com/get-user",
                 {
 
                     method: "POST",
