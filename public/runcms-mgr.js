@@ -43,7 +43,7 @@ async function loadComplaints() {
 // LOAD OFFICERS
 async function loadOfficers() {
 
-    const res = await fetch("https://runcmsprod.onrender.com/api/manager/officers");
+    const res = await fetch("https://runcmsprods.onrender.com/api/manager/officers");
     const officers = await res.json();
 
     const select = document.getElementById("officerSelect");
@@ -139,7 +139,7 @@ async function saveComment(){
 
     const response =
         await fetch(
-            "https://runcmsprod.onrender.com/api/add-comment",
+            "https://runcmsprods.onrender.com/api/add-comment",
             {
                 method:"POST",
 
