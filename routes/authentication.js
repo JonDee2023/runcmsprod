@@ -355,7 +355,7 @@ router.get("/my-complaints/:user_id", async (req, res) => {
                 c.submitted_at,
                 cc.comment
             FROM complaints c
-            JOIN complaint_comment cc
+            LEFT JOIN complaint_comment cc
             ON c.complaint_id = cc.complaint_id
             WHERE complainant_id = $1
             ORDER BY submitted_at DESC
