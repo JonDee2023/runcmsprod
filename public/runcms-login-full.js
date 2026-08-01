@@ -44,11 +44,13 @@ async function userLogin(e) {
         return;
     }
 
-    function simpleHash(password) {
+    //function simpleHash(password) {
 
-        return btoa(password);
+        //return btoa(password);
 
-    }
+    //}
+
+    const hashedPassword = await bcrypt.hash(iPassword, 10);
 
     try {
 
@@ -65,8 +67,8 @@ async function userLogin(e) {
 
                     body: JSON.stringify({
                         email: iUsername,
-                        password:
-                            simpleHash(iPassword)
+                        password: hashedPassword
+                            //simpleHash(iPassword)
                     })
                 }
             );
