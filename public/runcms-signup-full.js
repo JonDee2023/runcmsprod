@@ -68,11 +68,11 @@ async function userSignup(event) {
 
 
     // 🔹 Simple hash function (for learning only)
-    function simpleHash(password) {
-        return btoa(password); // encode to base64 (NOT secure, just demo)
+    //function simpleHash(password) {
+       // return btoa(password); // encode to base64 (NOT secure, just demo)
     }
 
-    
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     const response = await fetch("https://runcmsprods.onrender.com/api/signup", {
 
@@ -85,7 +85,7 @@ async function userSignup(event) {
         lastname: userLastName,
         email: userEmail,
         phone: userPhoneNumber,
-        password: simpleHash(userCr8Password)
+        password: hashedPassword
         
 
     })
