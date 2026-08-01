@@ -7,6 +7,9 @@ const { v4: uuidv4 } = require("uuid");
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 
+const jwt = require("jsonswebtoken");
+const dotenv = require("dotenv");
+
 // SIGNUP
 
 router.post("/signup", async (req, res) => {
