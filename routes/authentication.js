@@ -7,8 +7,8 @@ const { v4: uuidv4 } = require("uuid");
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 
-const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv");
+//const jwt = require("jsonwebtoken");
+
 
 // SIGNUP
 
